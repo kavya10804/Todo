@@ -57,6 +57,26 @@
 
         </androidx.cardview.widget.CardView>
 
+        <!-- Search Todo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:hint="Search todos..."
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Todo List -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTodos"
             android:layout_width="match_parent"
@@ -64,6 +84,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1" />
 
+        <!-- REST API Button -->
         <Button
             android:id="@+id/btnApi"
             android:layout_width="wrap_content"
