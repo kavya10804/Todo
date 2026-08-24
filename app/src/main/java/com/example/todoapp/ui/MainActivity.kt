@@ -9,7 +9,6 @@ import com.example.todoapp.ui.TodoAdapter
 import com.example.todoapp.viewmodel.TodoViewModel
 import com.example.todoapp.ui.RetrofitDemoFragment
 import android.view.View
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
