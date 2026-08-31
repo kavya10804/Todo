@@ -10,6 +10,7 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+
     <!-- Existing Todo screen -->
     <LinearLayout
         android:id="@+id/todoContainer"
@@ -17,6 +18,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTodoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Todo App"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -80,12 +93,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:text="TODO APP"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
 
 </FrameLayout>
